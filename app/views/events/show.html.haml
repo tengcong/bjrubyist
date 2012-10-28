@@ -10,6 +10,9 @@
 %p
   %b Description:
   = @event.description
+%p
+  %b 参加人数:
+  = @event.members_count
 = link_to 'Edit', edit_event_path(@event)
 = link_to 'Back', events_path
 = render 'join_form'

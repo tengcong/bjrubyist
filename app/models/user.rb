@@ -13,8 +13,8 @@ class User < ActiveRecord::Base
   attr_accessible :role_ids, :as => :admin
   attr_accessible :name, :email, :password, :password_confirmation, :remember_me
 
-  has_many :memberships
-  has_many :events, :through => :memberships
+  has_many :memberships, :foreign_key => "member_id"
+  has_many :events, :through => :memberships, :foreign_key => "member_id"
 
   has_many :authorizations, :dependent => :destroy
 
