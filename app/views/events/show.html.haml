@@ -33,3 +33,9 @@
 #uyan_frame
 %script#UYScript{:async => "", :src => "http://v1.uyan.cc/js/iframe.js?UYUserId=0", :type => "text/javascript"}
 / UY END
+%p
+  %b 参加人数:
+  = @event.members_count
+= link_to 'Edit', edit_event_path(@event)
+= link_to 'Back', events_path
+= render 'join_form'
