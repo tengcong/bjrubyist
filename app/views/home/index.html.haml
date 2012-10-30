@@ -49,19 +49,15 @@
             %h3
               #{@event.date}
               %br
-              %time 2:00p
+              %time #{@event.from}
               to
-              %time 5:00p
+              %time #{@event.to}
         %tr
           %td
             %i.icon-map-marker
           %td
             %address
-              %h3 ThoughtWorks
-              / 北京市东直门
-              / %br/
-              / 国华投资大厦11层
-              / %br/
+              %h3 #{@event.location}
         -else
         %tr
           %td

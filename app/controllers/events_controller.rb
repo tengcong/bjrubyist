@@ -1,6 +1,6 @@
 class EventsController < ApplicationController
   #raise an exception if the user is not able to perform the given action
-  load_and_authorize_resource
+  #load_and_authorize_resource
 
 
   # GET /events

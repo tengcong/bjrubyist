@@ -3,7 +3,8 @@
   = @event.name
 %p
   %b Date:
-  = @event.date
+  =@event.date
+  (from #{@event.from} to #{@event.to})
 %p
   %b Location:
   = @event.location

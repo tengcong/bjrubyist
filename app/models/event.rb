@@ -1,5 +1,6 @@
 class Event < ActiveRecord::Base
   attr_accessible :date, :description, :location, :name
+  attr_accessible :from, :to
 
   # define membership many-to-many relation
   has_many :memberships, :dependent => :destroy

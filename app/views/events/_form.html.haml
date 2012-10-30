@@ -3,6 +3,8 @@
   .form-inputs
     = f.input :name
     = f.input :date, :as => :string, :input_html => { :class => 'datepicker' }
+    = f.input :from
+    = f.input :to
     = f.input :location
     = f.input :description
   .form-actions
